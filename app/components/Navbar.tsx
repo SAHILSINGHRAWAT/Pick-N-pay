@@ -106,7 +106,7 @@ export default function Navbar() {
             {["Home", "Offers", "About", "Contact"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/#${item.toLowerCase()}`}
                 className="text-gray-800 hover:text-orange-600 font-semibold transition-colors"
               >
                 {item}
@@ -191,16 +191,16 @@ export default function Navbar() {
             </div>
             <div className="flex-1 overflow-y-auto px-6 py-4">
               <nav className="flex flex-col gap-2">
-                <a href="#home" onClick={() => handleMobileNav("#home")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
+                <a href="/#home" onClick={() => handleMobileNav("/#home")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
                   <span className="bg-orange-100 p-2 rounded-full"><Menu className="w-5 h-5 text-orange-600" /></span> Home
                 </a>
-                <a href="#about" onClick={() => handleMobileNav("#about")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
+                <a href="/#about" onClick={() => handleMobileNav("/#about")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
                   <span className="bg-orange-100 p-2 rounded-full"><Info className="w-5 h-5 text-orange-600" /></span> About
                 </a>
-                <a href="#offers" onClick={() => handleMobileNav("#offers")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
+                <a href="/#offers" onClick={() => handleMobileNav("/#offers")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
                   <span className="bg-orange-100 p-2 rounded-full"><ShoppingCart className="w-5 h-5 text-orange-600" /></span> Offers
                 </a>
-                <a href="#contact" onClick={() => handleMobileNav("#contact")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
+                <a href="/#contact" onClick={() => handleMobileNav("/#contact")} className="flex items-center gap-3 text-lg font-semibold text-gray-800 hover:text-orange-600 py-2">
                   <span className="bg-orange-100 p-2 rounded-full"><Phone className="w-5 h-5 text-orange-600" /></span> Contact
                 </a>
 
