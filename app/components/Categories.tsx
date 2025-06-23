@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ShoppingCart, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Categories() {
   const [hoveredCategory, setHoveredCategory] = useState(null)
@@ -132,11 +133,10 @@ export default function Categories() {
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {categories.map((category) => (
-            <div
+            <Link
               key={category.id}
+              href={`/categories/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
               className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
-              onMouseEnter={() => setHoveredCategory(category.id)}
-              onMouseLeave={() => setHoveredCategory(null)}
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
@@ -173,16 +173,16 @@ export default function Categories() {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 transform group-hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
+                <div className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 transform group-hover:scale-105 flex items-center justify-center space-x-2 shadow-lg">
                   <ShoppingCart className="w-4 h-4" />
                   <span>Explore {category.name}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </div>
               </div>
 
               {/* Hover Effect Border */}
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-orange-300 rounded-2xl transition-colors duration-300"></div>
-            </div>
+            </Link>
           ))}
         </div>
 

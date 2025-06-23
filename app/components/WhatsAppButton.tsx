@@ -3,7 +3,7 @@
 import { MessageCircle, Phone } from "lucide-react"
 
 export default function WhatsAppButton() {
-  const phoneNumber = "1234567890" // Replace with actual WhatsApp number
+  const phoneNumber = "7895433887" // Replace with actual WhatsApp number
   const message = "Hi! I'd like to place an order from Pick N Pay Mart."
 
   const handleWhatsAppClick = () => {
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
 
       {/* Call Button */}
       <button
-        onClick={() => window.open("tel:+1234567890", "_self")}
+        onClick={() => window.open("tel:7895433887", "_self")}
         className="group relative bg-gradient-to-r from-blue-500 to-blue-600 text-white w-14 h-14 rounded-full shadow-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-110 flex items-center justify-center mt-3"
       >
         <Phone className="w-6 h-6 group-hover:animate-pulse" />

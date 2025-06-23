@@ -51,7 +51,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: "123 Main Street, City",
+      details: "Nirmal Bagh, Block A, Rishikesh",
       subtitle: "Easy parking available",
       color: "text-red-600",
       bgColor: "bg-red-100",
@@ -200,7 +200,7 @@ export default function ContactSection() {
                   <h4 className="font-bold text-gray-800 mb-1">Pick N Pay Mart</h4>
                   <p className="text-sm text-gray-600">Nirmal Bagh , Rishikesh</p>
                   <a
-                    href="https://maps.google.com/?q=Pick+N+Pay+Mart+123+Main+Street"
+                    href="https://maps.app.goo.gl/PhNwi7HAg7RRb9FC6?g_st=ac"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center mt-2"
@@ -266,7 +266,7 @@ export default function ContactSection() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://wa.me/1234567890?text=Hi! I need directions to Pick N Pay Mart. Can you help?",
+                      "https://wa.me/7895433887?text=Hi! I need directions to Pick N Pay Mart. Can you help?",
                       "_blank",
                     )
                   }
@@ -288,7 +288,7 @@ export default function ContactSection() {
                 <button
                   onClick={() =>
                     window.open(
-                      "https://wa.me/1234567890?text=Hi! I'd like to place an order from Pick N Pay Mart.",
+                      "https://wa.me/7895433887?text=Hi! I'd like to place an order from Pick N Pay Mart.",
                       "_blank",
                     )
                   }
