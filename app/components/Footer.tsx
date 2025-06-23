@@ -106,17 +106,17 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Main Street</p>
-                  <p className="text-gray-300">City, State 12345</p>
+                  <p className="text-gray-300">Nirmal Bagh , Block A</p>
+                  <p className="text-gray-300">Rishikesh, Uttarakhand</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">7895433887</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <p className="text-gray-300">info@picknpaymart.com</p>
+                <p className="text-gray-300">rv.singh@gmail.com</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />

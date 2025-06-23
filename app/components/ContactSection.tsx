@@ -28,7 +28,7 @@ export default function ContactSection() {
     {
       icon: MessageCircle,
       title: "WhatsApp Order",
-      details: "+1 (555) 123-4567",
+      details: "7895433887",
       subtitle: "Quick & Easy Ordering",
       color: "text-green-600",
       bgColor: "bg-green-100",
@@ -36,7 +36,7 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "7895433887",
       subtitle: "Mon-Sun: 8AM-10PM",
       color: "text-blue-600",
       bgColor: "bg-blue-100",
@@ -300,7 +300,7 @@ export default function ContactSection() {
                 </button>
                 <button className="w-full bg-white/20 backdrop-blur-sm text-white py-3 rounded-xl hover:bg-white/30 transition-all duration-300 transform hover:scale-105 font-medium flex items-center justify-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>Call: +1 (555) 123-4567</span>
+                  <span>Call: 7895433887</span>
                 </button>
               </div>
             </div>
