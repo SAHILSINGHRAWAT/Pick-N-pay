@@ -143,7 +143,7 @@ export default function Navbar() {
             <button
               onClick={() =>
                 window.open(
-                  "https://wa.me/1234567890?text=Hi! I'd like to place an order from Pick N Pay Mart.",
+                  "https://wa.me/7895433887?text=Hi! I'd like to place an order from Pick N Pay Mart.",
                   "_blank"
                 )
               }
@@ -226,7 +226,7 @@ export default function Navbar() {
               <button
                 onClick={() =>
                   window.open(
-                    "https://wa.me/1234567890?text=Hi! I'd like to place an order from Pick N Pay Mart.",
+                    "https://wa.me/7895433887?text=Hi! I'd like to place an order from Pick N Pay Mart.",
                     "_blank"
                   )
                 }

@@ -187,7 +187,7 @@ export default function ContactSection() {
               <div className="relative">
                 <div className="w-full h-80 rounded-2xl overflow-hidden shadow-lg">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.74844097932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1635959472516!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.723687728995!2d78.27362847501158!3d30.073453817196658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093ff9de636a8f%3A0xe9dc25cf0148adb0!2sPICK%20N%20PAY%20MART!5e0!3m2!1sen!2sin!4v1750701833651!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -195,11 +195,11 @@ export default function ContactSection() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="rounded-2xl"
-                  ></iframe>
+                  />
                 </div>
                 <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
                   <h4 className="font-bold text-gray-800 mb-1">Pick N Pay Mart</h4>
-                  <p className="text-sm text-gray-600">123 Main Street, City</p>
+                  <p className="text-sm text-gray-600">Nirmal Bagh , Rishikesh</p>
                   <a
                     href="https://maps.google.com/?q=Pick+N+Pay+Mart+123+Main+Street"
                     target="_blank"
