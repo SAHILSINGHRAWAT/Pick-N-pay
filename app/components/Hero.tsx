@@ -34,14 +34,14 @@ export default function Hero() {
     title: "Freshness That Speaks for Itself",
     subtitle: "Dairy, Fruits & Veggies — Farm to Table",
     description: "Our promise: freshness in every bite. Whether it's milk, fruits, or pantry staples — we source directly, so you get the best.",
-    cta: "Shop Fresh",
+    cta: "Know About Us",
     gradient: "from-yellow-500 to-green-500",
   },
   {
     title: "We Deliver More Than Just Groceries",
     subtitle: "Free Delivery. No Minimums.",
     description: "Forget delivery charges. Order anything — anytime — and enjoy free doorstep delivery with care and speed.",
-    cta: "Start Shopping",
+    cta: "Journey",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
@@ -135,7 +135,25 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full hover:from-orange-600 hover:to-orange-700 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center group">
+              <button
+                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full hover:from-orange-600 hover:to-orange-700 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center group"
+                onClick={() => {
+                  const cta = slides[currentSlide].cta.toLowerCase();
+                  if (cta.includes("offer")) {
+                    window.location.href = "/#offers";
+                  } else if (cta.includes("category")) {
+                    window.location.href = "/#categories/groceries";
+                  } else if (cta.includes("product")) {
+                    window.location.href = "/#products";
+                  } else if (cta.includes("about")) {
+                    window.location.href = "/#about";
+                  } else if (cta.includes("shop")) {
+                    window.location.href = "/#home";
+                  } else {
+                    window.location.href = "/";
+                  }
+                }}
+              >
                 {slides[currentSlide].cta}
                 <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>

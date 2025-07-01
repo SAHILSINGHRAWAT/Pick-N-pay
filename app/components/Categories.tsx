@@ -37,7 +37,7 @@ export default function Categories() {
     },
     {
       id: 4,
-      name: "Nuts & Dry Fruits",
+      name: "Nuts Dry Fruits",
       icon: "🥜",
       description: "Premium quality nuts and dried fruits",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8.jpg-yCgtpv8tby5R6bztGGYLX8w4IR3X4t.jpeg",

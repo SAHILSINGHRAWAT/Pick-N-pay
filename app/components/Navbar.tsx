@@ -30,7 +30,7 @@ export default function Navbar() {
     "Groceries",
     "Food Products",
     "Dairy",
-    "Nuts & Dry Fruits",
+    "Nuts Dry Fruits",
     "Cosmetics",
     "Hygiene Products",
     "Baby Products",

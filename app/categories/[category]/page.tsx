@@ -8,7 +8,7 @@ const categoryMap: Record<string, string> = {
   "groceries": "Groceries",
   "food-products": "Food Products",
   "dairy": "Dairy",
-  "nuts-dry-fruits": "Nuts & Dry Fruits",
+  "nuts-dry-fruits": "Nuts-Dry-Fruits",
   "cosmetics": "Cosmetics",
   "hygiene-products": "Hygiene Products",
   "baby-products": "Baby Products",
@@ -44,6 +44,7 @@ export default async function CategoryPage({ params }: { params: { category: str
           <h1 className="text-4xl font-extrabold text-orange-600 mb-6 text-center drop-shadow-lg">
             {categoryName}
           </h1>
+         <div className="sahil  "></div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {images.length > 0 ? (
               images.map((img, idx) => (

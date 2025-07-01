@@ -70,7 +70,7 @@ export default function ContactSection() {
             Contact
             <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> Us</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-medium text-gray-600 max-w-3xl mx-auto">
             Have questions or need assistance? We're here to help! Reach out to us through any of the channels below.
           </p>
         </div>
@@ -80,16 +80,16 @@ export default function ContactSection() {
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center group"
+              className="rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 text-center group bg-gradient-to-br from-orange-500 via-orange-100 to-orange-200 border border-orange-100"
             >
               <div
-                className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${info.bgColor} mb-4 group-hover:scale-110 transition-transform duration-300`}
+                className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-white via-orange-100 to-orange-200 mb-4 group-hover:scale-110 transition-transform duration-300 shadow-md border-2 border-orange-100`}
               >
                 <info.icon className={`w-8 h-8 ${info.color}`} />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">{info.title}</h3>
-              <p className="text-gray-800 font-medium mb-1">{info.details}</p>
-              <p className="text-gray-600 text-sm">{info.subtitle}</p>
+              <h3 className="text-xl font-extrabold text-orange-700 mb-2 drop-shadow-sm tracking-tight">{info.title}</h3>
+              <p className="text-orange-900 font-semibold mb-1 text-base drop-shadow-sm">{info.details}</p>
+              <p className="text-orange-800/80 text-sm font-medium drop-shadow-sm">{info.subtitle}</p>
             </div>
           ))}
         </div>

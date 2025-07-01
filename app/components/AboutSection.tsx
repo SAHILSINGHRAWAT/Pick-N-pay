@@ -231,18 +231,18 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Timeline */}
+        {/* Timeline - Responsive: Timeline for desktop, grid for mobile */}
         <div className="bg-white rounded-3xl p-8 shadow-xl">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Journey</h3>
-          <div className="relative">
+          {/* Desktop Timeline */}
+          <div className="relative hidden sm:block">
             {/* Timeline Line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-500 to-red-500 rounded-full"></div>
-
             {/* Timeline Items */}
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <div key={index} className={`flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
+                  <div className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}> 
                     <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                       <div className="text-orange-600 font-bold text-lg mb-2">{milestone.year}</div>
                       <h4 className="text-xl font-bold text-gray-800 mb-2">{milestone.event}</h4>
@@ -253,6 +253,25 @@ export default function AboutSection() {
                     <div className="w-6 h-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-full border-4 border-white shadow-lg"></div>
                   </div>
                   <div className="w-1/2"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* Mobile Grid */}
+          <div className="block sm:hidden">
+            <div className="grid grid-cols-1 xs:grid-cols-2 gap-6">
+              {milestones.map((milestone, index) => (
+                <div
+                  key={index}
+                  className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center bg-gradient-to-br from-orange-50 via-orange-200 to-orange-400"
+                >
+                  <div className="relative mb-3 flex items-center justify-center">
+                    <div className="w-14 h-14 bg-gradient-to-br from-orange-400 via-orange-200 to-orange-50 rounded-full flex items-center justify-center shadow-lg border-4 border-orange-100">
+                      <span className="text-orange-600 font-extrabold text-xl tracking-wide drop-shadow-md" style={{letterSpacing: '0.05em'}}>{milestone.year}</span>
+                    </div>
+                  </div>
+                  <h4 className="text-lg font-bold text-orange-700 mb-1 drop-shadow-sm">{milestone.event}</h4>
+                  <p className="text-orange-900/80 text-sm font-medium drop-shadow-sm">{milestone.description}</p>
                 </div>
               ))}
             </div>
